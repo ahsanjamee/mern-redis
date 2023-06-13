@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Menu, Transition } from "@headlessui/react";
-import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
-import { Fragment, useEffect, useState } from "react";
+// import { Menu, Transition } from "@headlessui/react";
+// import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
+import { useEffect, useState } from "react";
 import UserCreateModal from "./UserCreateModal";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes: string[]) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 type UserType = {
   _id: string;
@@ -127,7 +127,7 @@ export default function UserList() {
                 <p className="whitespace-nowrap">{users.email}</p>
               </div>
             </div>
-            <div className="flex flex-none items-center gap-x-4">
+            {/* <div className="flex flex-none items-center gap-x-4">
               <Menu as="div" className="relative flex-none">
                 <Menu.Button className="-m-2.5 block p-2.5 text-gray-500 hover:text-gray-900">
                   <span className="sr-only">Open options</span>
@@ -162,7 +162,7 @@ export default function UserList() {
                   </Menu.Items>
                 </Transition>
               </Menu>
-            </div>
+            </div> */}
           </li>
         ))
       ) : (
