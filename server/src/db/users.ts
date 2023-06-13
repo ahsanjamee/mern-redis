@@ -10,7 +10,8 @@ export const UserModel = mongoose.model("User", UserSchema);
 //actions
 export const getUsers = () => UserModel.find();
 export const getUserByEmail = (email: string) => UserModel.findOne({ email });
-export const getUserByName = (name: string) => UserModel.findOne({ name });
+export const getUserByName = (username: string) =>
+  UserModel.findOne({ username });
 export const getUserById = (id: string) => UserModel.findOne({ id });
 
 export const createUser = (values: Record<string, any>) =>
